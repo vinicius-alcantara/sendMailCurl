@@ -2,9 +2,9 @@
 ######## VARs ########
 SMTP_SRV="smtp.office365.com";
 SMTP_PORT="587";
-SMTP_USR="$(echo -ne "XXXX@ofice365.com" | base64 -d)";
+SMTP_USR="$(echo -ne "XXXX@office365.com" | base64 -d)";
 SMTP_PASS="$(echo -ne "YYYYYYY" | base64 -d)"
-MAIL_FROM="$(echo -ne "XXXX@ofice365.com" | base64 -d)";
+MAIL_FROM="$(echo -ne "XXXX@office365.com" | base64 -d)";
 MAIL_TO_1="123@gmail.com";
 MAIL_TO_2="1234@gmail.com";
 SUBJECT_SUCCESS="SUCCESS: DRAIN WORKER K8S";
