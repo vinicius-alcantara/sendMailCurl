@@ -2,13 +2,13 @@
 ######## VARs ########
 SMTP_SRV="smtp.office365.com";
 SMTP_PORT="587";
-SMTP_USR="$(echo -ne "dmluaWNpdXMuYWxjYW50YXJhQHNvbW9zYWdpbGl0eS5jb20uYnI=" | base64 -d)";
-SMTP_PASS="$(echo -ne "TXVkYXJAMTIz" | base64 -d)"
-MAIL_FROM="$(echo -ne "dmluaWNpdXMuYWxjYW50YXJhQHNvbW9zYWdpbGl0eS5jb20uYnI=" | base64 -d)";
-MAIL_TO_1="vinicius.redes2011@gmail.com";
-MAIL_TO_2="vinicius.redes2020@gmail.com";
-SUBJECT_SUCCESS="SUCCESS: SRM-SRV-";
-SUBJECT_FAILED="FAILED: SRM-SRV-";
+SMTP_USR="$(echo -ne "XXXX@ofice365.com" | base64 -d)";
+SMTP_PASS="$(echo -ne "YYYYYYY" | base64 -d)"
+MAIL_FROM="$(echo -ne "XXXX@ofice365.com" | base64 -d)";
+MAIL_TO_1="123@gmail.com";
+MAIL_TO_2="1234@gmail.com";
+SUBJECT_SUCCESS="SUCCESS: DRAIN WORKER K8S";
+SUBJECT_FAILED="FAILED: DRAIN WORKER K8S";
 SUCCESS_NAME_FILE_EMAIL="body_mail_success.txt";
 FAILED_NAME_FILE_EMAIL="body_mail_failed.txt";
 
@@ -88,5 +88,5 @@ function send_email_failed() {
 
 }
 
-send_email_failed;
+#send_email_failed;
 
